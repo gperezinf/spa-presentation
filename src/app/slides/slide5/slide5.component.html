@@ -1,0 +1,21 @@
+<div class="slide slide-background slide-horizontal">
+  <div class="half-slide white">
+    <h1>Una sola página</h1>
+    <h3>¿Cómo?</h3>
+  </div>
+  <div class="half-slide">
+    <div>
+      <h3>Cargando la aplicación completa al inicio</h3>
+      <p style="margin: 10px 10px 50px;">Reescribe el HTML de la página en respuesta a interacciones del usuario</p>
+    </div>
+    <div class="pagina-illust" [ngClass]="{'template1': currentClass == 1, 'template2': currentClass == 2, 'template3': currentClass == 3}" style="width: 300px; height: 400px;">
+      <div [ngClass]="{'page-block-in': !fading, 'page-block-out': fading}" style="grid-area: header; background: lightgreen"></div>
+      <div [ngClass]="{'page-block-in': !fading, 'page-block-out': fading}" style="grid-area: menu1; background: palegoldenrod"></div>
+      <div [ngClass]="{'page-block-in': !fading, 'page-block-out': fading}" style="grid-area: menu2; background: palegoldenrod"></div>
+      <div [ngClass]="{'page-block-in': !fading, 'page-block-out': fading}" style="grid-area: menu3; background: palegoldenrod"></div>
+      <div [ngClass]="{'page-block-in': !fading, 'page-block-out': fading}" style="grid-area: main1; background: sandybrown"></div>
+      <div [ngClass]="{'page-block-in': !fading, 'page-block-out': fading}" style="grid-area: main2; background: salmon"></div>
+      <div [ngClass]="{'page-block-in': !fading, 'page-block-out': fading}" style="grid-area: footer; background: lightseagreen"></div>
+    </div>
+  </div>
+</div>
